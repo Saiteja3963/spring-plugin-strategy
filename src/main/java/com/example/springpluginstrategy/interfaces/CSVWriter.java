@@ -10,7 +10,7 @@ public class CSVWriter implements WriterPlugin {
 
     @Override
     public void write(String message) {
-        log.info("Writing from Default Writer: {} for the format: {}", message, format);
+        log.info("Writing from CSV Writer: {} for the format: {}", message, format);
     }
 
     @Override

@@ -21,7 +21,7 @@ public class SpringPluginStrategyApplication implements ApplicationRunner {
     PluginRegistry<WriterPlugin, String> plugins;
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args) {
         for (String format : "csv,txt,xlsx".split(",")) {
             plugins.getPluginFor(format).get().write("Hello World!");
         }
